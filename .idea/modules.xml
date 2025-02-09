@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Terraform_Test.iml" filepath="$PROJECT_DIR$/.idea/Terraform_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/learn-terraform-provision-eks-cluster.iml" filepath="$PROJECT_DIR$/.idea/learn-terraform-provision-eks-cluster.iml" />
     </modules>
   </component>
 </project>

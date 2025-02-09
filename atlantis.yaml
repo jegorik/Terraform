@@ -1,0 +1,12 @@
+---
+github:
+  user: "YOUR_USER_NAME"
+  token: "YOUR_ACCESS_TOKEN"
+  secret: "YOUR_SECRET"
+  hostname: "github.com"
+  repoAllowlist: ["<YOUR_ORG_NAME>]
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: "<YOUR_RULE_FOR_ATLANTIS>"

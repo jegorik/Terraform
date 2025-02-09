@@ -1,25 +1,42 @@
-variable "aws_region" {
-  default = "eu-central-1"
+variable "region" {
+  description = "AWS region"
+  type        = string
 }
 
-variable "github_owner" {
-  description = "GitHub organization or user name"
+variable "kubernetes_namespace" {
+  type = string
 }
 
-variable "github_repo" {
-  description = "GitHub repository name"
+variable "vpc_name" {
+  type = string
 }
 
-variable "github_user" {
-  description = "GitHub username for Atlantis"
+variable "vpc_cidr" {
+  type = string
 }
 
-variable "github_token" {
-  description = "GitHub personal access token"
-  sensitive   = true
+variable "worker_type" {
+  type = list(string)
 }
 
-variable "github_webhook_secret" {
-  description = "Webhook secret for Atlantis"
-  sensitive   = true
+variable "ami_type" {
+  type = string
+}
+
+variable "cluster_name" {
+  type = string
+}
+
+variable "workers_group_name" {
+  type = string
+}
+
+variable "private_cidr" {
+  type = list(string)
+  default = ["10.0.1.0/24", "10.0.2.0/24"]
+}
+
+variable "public_cidr" {
+  type = list(string)
+  default = ["10.0.4.0/24", "10.0.5.0/24"]
 }
